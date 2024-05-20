@@ -105,7 +105,7 @@ const ReferralForm = () => {
     <FormWrapper onSubmit={handleSubmit}>
       {message.text && <Message type={message.type}>{message.text}</Message>}
       <div>
-        <FormLabel htmlFor="referrerName">Your First Name:</FormLabel>
+        <FormLabel htmlFor="referrerName">Your First Name (or nym):</FormLabel>
         <FormInput
           type="text"
           id="referrerName"
