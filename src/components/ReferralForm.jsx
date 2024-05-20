@@ -75,7 +75,7 @@ const ReferralForm = () => {
             "Referrer is already a member.":
               "The referrer is already a member.",
             "Referrer has already made a referral.":
-              "The referrer has already made a referral. Only one referral per member at this time",
+              "The referrer has already made a referral. Only one referral per member at this time.",
           };
           setMessage({
             text: errorMessages[details] || error.response.data.message,
