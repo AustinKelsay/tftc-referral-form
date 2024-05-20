@@ -115,7 +115,9 @@ const ReferralForm = () => {
         />
       </div>
       <div>
-        <FormLabel htmlFor="referrerEmail">Your Email:</FormLabel>
+        <FormLabel htmlFor="referrerEmail">
+          Your Email (Associated with TFTC):
+        </FormLabel>
         <FormInput
           type="email"
           id="referrerEmail"
@@ -125,7 +127,9 @@ const ReferralForm = () => {
         />
       </div>
       <div>
-        <FormLabel htmlFor="refereeEmail">Referee Email:</FormLabel>
+        <FormLabel htmlFor="refereeEmail">
+          Email of the person you are referring:
+        </FormLabel>
         <FormInput
           type="email"
           id="refereeEmail"
