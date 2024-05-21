@@ -44,8 +44,23 @@ const ReferralForm = () => {
   const [refereeEmail, setRefereeEmail] = useState("");
   const [message, setMessage] = useState({ text: "", type: "" });
 
+  const validateEmail = (email) => {
+    // Basic email validation regex pattern
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate email inputs
+    if (!validateEmail(referrerEmail) || !validateEmail(refereeEmail)) {
+      setMessage({
+        text: "Please enter valid email addresses.",
+        type: "error",
+      });
+      return;
+    }
 
     try {
       const response = await axios.post(
