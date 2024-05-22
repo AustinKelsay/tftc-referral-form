@@ -21,8 +21,7 @@ export default function App() {
         <ol>
           <li>
             Think of someone in your network who isn't a member of the TFTC
-            community and refer them to our email list using the form linked
-            below.
+            community and refer them to our email list using the form below.
           </li>
           <li>
             If that person stays subscribed to the newsletter and opens three
