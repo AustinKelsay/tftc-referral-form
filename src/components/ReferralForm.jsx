@@ -5,6 +5,7 @@ import axios from "axios";
 const FormWrapper = styled.form`
   font-family: "Nunito Sans", sans-serif;
   color: rgb(0, 0, 0);
+  width: 90%;
 `;
 
 const FormLabel = styled.label`

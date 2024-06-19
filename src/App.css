@@ -1,19 +1,15 @@
 main {
   font-family: "Nunito Sans";
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 h1 {
   font-family: "Nunito Sans";
   text-align: center;
   margin-bottom: 2rem;
-}
-
-.img-container {
-  width: 100%;
-  margin: 0 auto;
 }
 
 .question-mark-container {
@@ -27,4 +23,8 @@ h1 {
 img {
   display: block;
   margin: 0 auto;
+}
+
+ol {
+  padding-left: 12px;
 }
