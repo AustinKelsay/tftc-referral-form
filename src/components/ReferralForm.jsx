@@ -86,12 +86,12 @@ const ReferralForm = () => {
         if (error.response.status === 400) {
           const { details } = error.response.data;
           const errorMessages = {
-            "Referee is already a member.": "The referee is already a member.",
-            "Referrer is not a member.": "The referrer is not a member.",
+            "Referee is already a member.": "Error: Referee is already a member.",
+            "Referrer is not a member.": "Error: Referrer is not a member, the referrer must be a member of tftc.io to make a referral.",
             "Referrer is already a member.":
-              "The referrer is already a member.",
+              "Error: Referrer is already a member.",
             "Referrer has already made a referral.":
-              "The referrer has already made a referral. Only one referral per member at this time.",
+              "Error: The referrer has already made a referral. Only one referral per member at this time.",
           };
           setMessage({
             text: errorMessages[details] || error.response.data.message,
