@@ -87,6 +87,7 @@ const ReferralForm = () => {
           const { details } = error.response.data;
           const errorMessages = {
             "Referee is already a member.": "The referee is already a member.",
+            "Referrer is not a member.": "The referrer is not a member.",
             "Referrer is already a member.":
               "The referrer is already a member.",
             "Referrer has already made a referral.":
